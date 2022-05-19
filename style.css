@@ -1,0 +1,87 @@
+body, html {
+    width: 100%;
+}
+
+.track1 {
+    position: absolute;
+    left: 25%;
+    top: 12.5%;
+    width: 50%;
+    height: 25%;
+    border: 10px solid #8a2be2;
+}
+
+.box1, .box1::before, .box1::after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #00ffff;
+    animation: follow-track1 10s infinite running;
+    top: 10%;
+    left: 10%;
+}
+
+@keyframes follow-track1 {
+    0% {
+        top: 10%;
+        left: 22.5%;
+    }
+    25% {
+        top: 10%;
+        left: 72.5%;
+    }
+    50% {
+        top: 35%;
+        left: 72.5%;
+    }
+    75% {
+        top: 35%;
+        left: 22.5%;
+    }
+    100% {
+        top: 10%;
+        left: 22.5%;
+    }
+}
+
+.track2 {
+    position: absolute;
+    left: 25%;
+    top: 62.5%;
+    width: 50%;
+    height: 25%;
+    border: 10px solid #8a2be2;
+}
+
+.box2, .box2::before, .box2::after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #00ffff;
+    animation: follow-track2 10s infinite running;
+    top: 60%;
+    left: 22.5%;
+}
+
+@keyframes follow-track2 {
+    0% {
+        top: 60%;
+        left: 22.5%;
+    }
+    25% {
+        top: 60%;
+        left: 72.5%;
+    }
+    50% {
+        top: 85%;
+        left: 22.5%;
+    }
+    75% {
+        top: 85%;
+        left: 72.5%;
+    }
+    100% {
+        top: 60%;
+        left: 22.5%;
+    }
+}
